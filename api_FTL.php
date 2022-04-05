@@ -267,18 +267,36 @@ if (isset($_GET['getAllQueries']) && $auth) {
         $return = callFTLAPI("getallqueries");
     }
 
-    $allQueries = array();
-    foreach ($return as $line) {
-        $tmp = str_getcsv($line," ");
-        // UTF-8 encode domain
-        $tmp[2] = utf8_encode(str_replace("~"," ",$tmp[2]));
-        // UTF-8 encode client host name
-        $tmp[3] = utf8_encode($tmp[3]);
-        array_push($allQueries,$tmp);
-    }
+    if (!is_bool($return)) {
+      // Start the JSON string
+      echo '{"data":[';
+      $first = true;
 
-    $result = array('data' => $allQueries);
-    $data = array_merge($data, $result);
+      #foreach ($return as $line)
+      foreach($return as $line) {
+
+        // Insert a comma before the next record (except on the first one)
+       if (!$first) {
+              echo ",";
+       } else {
+              $first = false;
+       }
+
+        $row = str_getcsv($line," ");
+        // UTF-8 encode domain
+        $domain = utf8_encode(str_replace("~"," ",$row[2]));
+        // UTF-8 encode client host name
+        $client = utf8_encode($row[3]);
+
+        // Insert into array and output it in JSON format
+        // array:         time      type     domain  client   status  dnssecStatus    reply    response_time   CNAMEDomain regexID  upstream destination    EDE
+        echo json_encode([$row[0], $row[1], $domain, $client, $row[4],  $row[5],     $row[6],     $row[7],      $row[8],   $row[9],     $row[10],         $row[11]]);
+      }
+      // Finish the JSON string
+      echo ']}';
+    }
+    // exit at the end
+    exit();
 }
 
 if (isset($_GET["recentBlocked"]) && $auth) {
