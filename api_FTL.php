@@ -267,7 +267,7 @@ if (isset($_GET['getAllQueries']) && $auth) {
         $return = callFTLAPI("getallqueries");
     }
 
-    if (!is_bool($return)) {
+    if (!in_array("FTLnotrunning", $return )) {
       // Start the JSON string
       echo '{"data":[';
       $first = true;
