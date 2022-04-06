@@ -568,11 +568,10 @@ td.details-control {
   right: 3em;
   top: 50%;
   font-size: 12px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 #top-warning-count {
-  top: 50%;
+  top: 55%;
   left: 50%;
   right: unset;
   margin: 0;
@@ -584,7 +583,11 @@ td.details-control {
 }
 
 /* hide warning count when hover a collapsed sidebar */
-.sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu > li:hover > a > span.warning-count {
+.sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse
+  .sidebar-menu
+  > li:hover
+  > a
+  > span.warning-count {
   display: none !important;
 }
 

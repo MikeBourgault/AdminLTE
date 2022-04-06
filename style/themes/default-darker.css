@@ -1287,6 +1287,9 @@ fieldset[disabled] .btn-link:hover {
 .navbar-default .navbar-toggle .icon-bar {
   background-color: rgb(91, 99, 103);
 }
+#top-warning-count {
+  background: rgba(34, 46, 51, 0.5);
+}
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: rgb(55, 59, 62);
