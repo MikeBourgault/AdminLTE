@@ -174,16 +174,16 @@
     <meta http-equiv="cache-control" content="max-age=60,private">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pi-hole<?php echo $hostname ? " - " . $hostname : "" ?></title>
+    <title>Baitable<?php echo $hostname ? " - " . $hostname : "" ?></title>
 
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="manifest" href="img/favicons/manifest.json">
-    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#367fa9">
+    <link rel="mask-icon" href="img/favicons/favicon-32x32.png" color="#367fa9">
     <link rel="shortcut icon" href="img/favicons/favicon.ico">
     <meta name="msapplication-TileColor" content="#367fa9">
-    <meta name="msapplication-TileImage" content="img/favicons/mstile-150x150.png">
+    <meta name="msapplication-TileImage" content="img/favicons/favicon-32x32.png">
 <?php if ($theme == "default-light") { ?>
     <meta name="theme-color" content="#367fa9">
 <?php } elseif ($theme == "default-dark") { ?>
