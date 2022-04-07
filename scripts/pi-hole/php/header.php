@@ -26,6 +26,7 @@
     $token = $_SESSION['token'];
 
     // Try to get temperature value from different places (OS dependent)
+    if(file_exists("/sys/class/thermal/thermal_zone0/temp"))
     {
         $output = rtrim(file_get_contents("/sys/class/thermal/thermal_zone0/temp"));
     }
