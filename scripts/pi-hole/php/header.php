@@ -251,9 +251,10 @@ if($auth) {
         <!-- Logo -->
         <a href="index.php" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini">P<strong>h</strong></span>
+            <!-- <span class="logo-mini"><strong>B</strong></span> -->
+            <span class="logo-mini"><img src="img/small_baitable.svg"></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg">Pi-<strong>hole</strong></span>
+            <span class="logo-lg"><strong>Baitable</strong></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">
@@ -329,7 +330,7 @@ if($auth) {
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                   <img style="display: none" src="img/baitable_main_logo.svg" alt="Baitable logo">
+                   <img src="img/white_logo_baitable.svg" alt="Baitable logo">
                 </div>
                 <div class="pull-left info">
                     <p>Status</p>
