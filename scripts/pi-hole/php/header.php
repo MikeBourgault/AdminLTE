@@ -174,7 +174,7 @@
     <meta http-equiv="cache-control" content="max-age=60,private">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Baitable<?php echo $hostname ? " - " . $hostname : "" ?></title>
+    <title>Baitable</title>
 
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -278,10 +278,10 @@ if($auth) {
                         </p>
                     </li>
                     <li class="dropdown user user-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <!-- a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"-->
                             <img src="img/small_baitable.svg" class="user-image" alt="Baitable logo" style="border-radius: 0" width="25" height="25">
-                            <span class="hidden-xs">Pi-hole</span>
-                        </a>
+                            <span class="hidden-xs">Baitable</span>
+                        <!-- /a -->
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
