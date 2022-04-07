@@ -545,7 +545,7 @@ if($auth) {
                     <!-- Pi-hole diagnosis -->
                     <li<?php if($scriptname === "messages.php"){ ?> class="active"<?php } ?>>
                         <a href="messages.php">
-                            <i class="fa fa-fw menu-icon fa-stethoscope"></i> Pi-hole diagnosis
+                            <i class="fa fa-fw menu-icon fa-stethoscope"></i> Baitable diagnosis
                         </a>
                     </li>
                     <!-- Run gravity.sh -->
