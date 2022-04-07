@@ -254,7 +254,7 @@ if($auth) {
             <!-- <span class="logo-mini"><strong>B</strong></span> -->
             <span class="logo-mini"><img src="img/small_baitable.svg"></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><strong>Baitable</strong></span>
+            <span class="logo-lg"><img src="img/baitable_main.svg"></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">
