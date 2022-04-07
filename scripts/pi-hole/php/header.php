@@ -274,7 +274,7 @@ if($auth) {
                     <li<?php echo !$hostname ? ' class="hidden"' : "" ?>>
                         <p class="navbar-text">
                             <span class="hidden-xs hidden-sm">hostname:</span>
-                            <code><?php echo $hostname; ?></code>
+                            <code><?php echo 'baitable'; ?></code>
                         </p>
                     </li>
                     <li class="dropdown user user-menu">

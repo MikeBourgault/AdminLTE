@@ -61,6 +61,13 @@
   background-color: #323232;
 }
 
+.user-panel .image {
+  flex: 1 0 25%;
+  margin: 0 10px;
+  display: none;
+  text-align: center;
+}
+
 .user-panel {
   display: flex;
   align-items: center;
