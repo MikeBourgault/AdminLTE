@@ -278,10 +278,10 @@ if($auth) {
                         </p>
                     </li>
                     <li class="dropdown user user-menu">
-                        <!-- a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"-->
+                        <!-- a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                             <img src="img/small_baitable.svg" class="user-image" alt="Baitable logo" style="border-radius: 0" width="25" height="25">
                             <span class="hidden-xs">Baitable</span>
-                        <!-- /a -->
+                        </a -->
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
