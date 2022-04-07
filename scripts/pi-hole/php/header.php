@@ -26,7 +26,6 @@
     $token = $_SESSION['token'];
 
     // Try to get temperature value from different places (OS dependent)
-    if(file_exists("/sys/class/thermal/thermal_zone0/temp"))
     {
         $output = rtrim(file_get_contents("/sys/class/thermal/thermal_zone0/temp"));
     }
@@ -278,13 +277,13 @@ if($auth) {
                     </li>
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                            <img src="img/logo.svg" class="user-image" alt="Pi-hole logo" style="border-radius: 0" width="25" height="25">
+                            <img src="img/small_baitable.svg" class="user-image" alt="Baitable logo" style="border-radius: 0" width="25" height="25">
                             <span class="hidden-xs">Pi-hole</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img src="img/logo.svg" alt="Pi-hole Logo" style="border: 0" width="90" height="90">
+                                <img src="img/logo.svg" alt="Baitable Logo" style="border: 0" width="90" height="90">
                                 <p>
                                     Open Source Ad Blocker
                                     <small>Designed For Raspberry Pi</small>
@@ -329,7 +328,7 @@ if($auth) {
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="img/logo.svg" alt="Pi-hole logo">
+                   <img style="display: none" src="img/baitable_main_logo.svg" alt="Baitable logo">
                 </div>
                 <div class="pull-left info">
                     <p>Status</p>
@@ -639,12 +638,6 @@ if($auth) {
                     </a>
                 </li>
                 <?php } ?>
-                <!-- Donate -->
-                <li>
-                    <a href="https://pi-hole.net/donate/" rel="noopener" target="_blank">
-                        <i class="fab fa-fw menu-icon fa-paypal"></i> <span>Donate</span>
-                    </a>
-                </li>
                  <!-- Docs -->
                  <li>
                     <a href="https://docs.pi-hole.net/" rel="noopener" target="_blank">
