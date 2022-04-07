@@ -72,12 +72,12 @@
         <div class="row row-centered text-center version-info">
             <div class="col-xs-12 col-sm-8 col-md-6">
                 <?php if (isset($core_commit) || isset($web_commit) || isset($FTL_commit)) { ?>
-                <ul class="list-unstyled">
+                <!-- <ul class="list-unstyled">
                     <?php if($dockerTag) { ?> <li><strong>Docker Tag</strong> <?php echo $dockerTag; ?></li> <?php } ?>
                     <li><strong>Pi-hole</strong> <?php echo $coreVersionStr; ?></li>
                     <li><strong>FTL</strong> <?php echo $ftlVersionStr; ?></li>
                     <li><strong>Web Interface</strong> <?php echo $webVersionStr; ?></li>
-                </ul>
+                </ul> -->
                 <?php } else { ?>
                 <ul class="list-inline">
                     <?php if($dockerTag) { ?>
