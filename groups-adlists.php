@@ -20,7 +20,7 @@
             <!-- /.box-header -->
             <div class="box-header with-border">
                 <h3 class="box-title">
-                    Add a new adlist
+                    Add a new phishlist
                 </h3>
             </div>
             <!-- /.box-header -->
