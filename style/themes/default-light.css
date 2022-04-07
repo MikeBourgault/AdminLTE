@@ -60,6 +60,13 @@
 .left-side {
   background-color: #323232;
 }
+
+.user-panel {
+  display: flex;
+  align-items: center;
+  padding: 11px 11px;
+}
+
 .user-panel > .info,
 .user-panel > .info > a {
   color: #fff;
