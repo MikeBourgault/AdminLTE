@@ -10,8 +10,8 @@
 
 <!-- Title -->
 <div class="page-header">
-    <h1>Pi-hole diagnosis</h1>
-    <small>On this page, you can see messages from your Pi-hole concerning possible issues.</small>
+    <h1>Baitable diagnosis</h1>
+    <small>On this page, you can see messages from your Baitable concerning possible issues.</small>
 </div>
 
 <div class="row">
@@ -35,7 +35,7 @@
                     </tr>
                     </thead>
                 </table>
-                <p>Note: If errors are shown, you can <a href="debug.php">generate a debug log</a>, which will do a thorough Pi-hole evaluation.</p>
+                <p>Note: If errors are shown, you can <a href="debug.php">generate a debug log</a>, which will do a thorough Baitable evaluation.</p>
             </div>
             <!-- /.box-body -->
         </div>

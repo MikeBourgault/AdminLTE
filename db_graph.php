@@ -14,7 +14,7 @@
 <span class="graphs-ticks"></span>
 
 <div class="page-header">
-    <h1>Compute graphical statistics from the Pi-hole query database</h1>
+    <h1>Compute graphical statistics from the Baitable query database</h1>
 </div>
 <div class="row">
   <div class="col-md-12">
@@ -43,7 +43,7 @@
 <div class="row">
   <div class="col-md-12">
     <div id="timeoutWarning" class="alert alert-warning alert-dismissible fade in" role="alert" hidden>
-        Depending on how large of a range you specified, the request may time out while Pi-hole tries to retrieve all the data.<br/><span id="err"></span>
+        Depending on how large of a range you specified, the request may time out while Baitable tries to retrieve all the data.<br/><span id="err"></span>
     </div>
   </div>
 </div>

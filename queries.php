@@ -42,7 +42,7 @@ else
 $showall = false;
 if(isset($_GET["all"]))
 {
-	$showing .= " all queries within the Pi-hole log";
+	$showing .= " all queries within the Baitable log";
 }
 else if(isset($_GET["client"]))
 {
@@ -51,7 +51,7 @@ else if(isset($_GET["client"]))
 else if(isset($_GET["forwarddest"]))
 {
 	if($_GET["forwarddest"] === "blocked")
-		$showing .= " queries blocked by Pi-hole";
+		$showing .= " queries blocked by Baitable";
 	elseif($_GET["forwarddest"] === "cached")
 		$showing .= " queries answered from cache";
 	else

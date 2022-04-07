@@ -463,7 +463,7 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "dns", "piho
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div><input type="checkbox" name="active" id="DHCPchk" <?php if ($DHCP){ ?>checked<?php } ?>><label for="DHCPchk"><strong>DHCP server enabled</strong></label></div><br>
-                                                <p id="dhcpnotice" lookatme-text="Make sure your router's DHCP server is disabled when using the Pi-hole DHCP server!" <?php if (!$DHCP){ ?>hidden<?php } ?>>Make sure your router's DHCP server is disabled when using the Pi-hole DHCP server!</p>
+                                                <p id="dhcpnotice" lookatme-text="Make sure your router's DHCP server is disabled when using the Baitable DHCP server!" <?php if (!$DHCP){ ?>hidden<?php } ?>>Make sure your router's DHCP server is disabled when using the Pi-hole DHCP server!</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -516,7 +516,7 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "dns", "piho
                                     <div class="box-body">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <label>Pi-hole domain name</label>
+                                                <label>Baitable domain name</label>
                                                 <div class="form-group">
                                                     <div class="input-group">
                                                         <div class="input-group-addon">Domain</div>
@@ -860,7 +860,7 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "dns", "piho
                                                         </div>
                                                     </div>
                                                     <div class="danger-area">
-                                                        <h4>Potentially dangerous options</h4>Make sure your Pi-hole is properly firewalled!
+                                                        <h4>Potentially dangerous options</h4>Make sure your Baitable is properly firewalled!
                                                         <div>
                                                             <input type="radio" name="DNSinterface" id="DNSinterface2" value="single"
                                                                     <?php if ($DNSinterface == "single"){ ?>checked<?php } ?>>
@@ -878,7 +878,7 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "dns", "piho
                                                         </div>
                                                         <p>These options are dangerous on devices
                                                            directly connected to the Internet such as cloud instances and are only safe if your
-                                                           Pi-hole is properly firewalled. In a typical at-home setup where your Pi-hole is
+                                                           Baitable is properly firewalled. In a typical at-home setup where your Baitable is
                                                            located within your local network (and you have <strong>not</strong> forwarded port 53
                                                            in your router!) they are safe to use.</p>
                                                     </div>
@@ -902,7 +902,7 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "dns", "piho
                                                 <div>
                                                     <input type="checkbox" name="DNSrequiresFQDN" id="DNSrequiresFQDN" title="domain-needed" <?php if ($DNSrequiresFQDN){ ?>checked<?php } ?>>
                                                     <label for="DNSrequiresFQDN"><strong>Never forward non-FQDN <code>A</code> and <code>AAAA</code> queries</strong></label>
-                                                    <p>When there is a Pi-hole domain set and this box is
+                                                    <p>When there is a Baitable domain set and this box is
                                                     ticked, this asks FTL that this domain is purely
                                                     local and FTL may answer queries from <code>/etc/hosts</code> or DHCP leases
                                                     but should never forward queries on that domain to any upstream servers.
@@ -918,14 +918,14 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "dns", "piho
                                                     of prefixes affected is the list given in <a href="https://tools.ietf.org/html/rfc6303">RFC6303</a>.</p>
                                                     <p><strong>Important</strong>: Enabling these two options may increase your privacy,
                                                     but may also prevent you from being able to access
-                                                    local hostnames if the Pi-hole is not used as DHCP server.</p>
+                                                    local hostnames if the Baitable is not used as DHCP server.</p>
                                                 </div>
                                                 <br>
                                                 <div>
                                                     <input type="checkbox" name="DNSSEC" id="DNSSEC" <?php if ($DNSSEC){ ?>checked<?php } ?>>
                                                     <label for="DNSSEC"><strong>Use DNSSEC</strong></label>
                                                     <p>Validate DNS replies and cache DNSSEC data. When forwarding DNS
-                                                    queries, Pi-hole requests the DNSSEC records needed to validate
+                                                    queries, Baitable requests the DNSSEC records needed to validate
                                                     the replies. If a domain fails validation or the upstream does not
                                                     support DNSSEC, this setting can cause issues resolving domains.
                                                     Use an upstream DNS server which supports DNSSEC when activating DNSSEC. Note that
@@ -935,10 +935,10 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "dns", "piho
                                                 </div>
                                                 <br>
                                                 <h4>Conditional forwarding</h4>
-                                                <p>If not configured as your DHCP server, Pi-hole typically won't be able to
+                                                <p>If not configured as your DHCP server, Baitable typically won't be able to
                                                    determine the names of devices on your local network.  As a
                                                    result, tables such as Top Clients will only show IP addresses.</p>
-                                                <p>One solution for this is to configure Pi-hole to forward these
+                                                <p>One solution for this is to configure Baitable to forward these
 	                                               requests to your DHCP server (most likely your router), but only for devices on your
 	                                               home network.  To configure this we will need to know the IP
 	                                               address of your DHCP server and which addresses belong to your local network.

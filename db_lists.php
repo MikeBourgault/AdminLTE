@@ -14,7 +14,7 @@
 
 <!-- Title -->
 <div class="page-header">
-    <h1>Compute Top Lists from the Pi-hole query database</h1>
+    <h1>Compute Top Lists from the Baitable query database</h1>
 </div>
 
 <div class="row">
